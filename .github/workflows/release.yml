@@ -2,7 +2,7 @@ name: Release
 
 # Publishes to npm when a version tag (e.g. v0.2.0) is pushed.
 # Authentication uses npm trusted publishing (OIDC) – no npm token is stored in GitHub.
-# Configure the trusted publisher on npmjs.com: owner "tayhosolutions", repository "nestjs-altcha",
+# Configure the trusted publisher on npmjs.com: owner "TayhoSolutions", repository "nestjs-altcha",
 # workflow "release.yml".
 
 on:
