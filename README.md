@@ -1,7 +1,7 @@
 # @tayho/nestjs-altcha
 
 [![npm](https://img.shields.io/npm/v/@tayho/nestjs-altcha)](https://www.npmjs.com/package/@tayho/nestjs-altcha)
-[![CI](https://github.com/tayhosolutions/nestjs-altcha/actions/workflows/ci.yml/badge.svg)](https://github.com/tayhosolutions/nestjs-altcha/actions/workflows/ci.yml)
+[![CI](https://github.com/TayhoSolutions/nestjs-altcha/actions/workflows/ci.yml/badge.svg)](https://github.com/TayhoSolutions/nestjs-altcha/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 Bot protection for NestJS with [ALTCHA](https://altcha.org) – self-hosted, no third-party service, no cookies. The browser solves a small proof-of-work challenge in the background; your backend verifies the solution and claims it so it cannot be reused.

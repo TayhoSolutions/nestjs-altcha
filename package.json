@@ -14,13 +14,13 @@
         "privacy",
         "gdpr"
     ],
-    "homepage": "https://github.com/tayhosolutions/nestjs-altcha#readme",
+    "homepage": "https://github.com/TayhoSolutions/nestjs-altcha#readme",
     "bugs": {
-        "url": "https://github.com/tayhosolutions/nestjs-altcha/issues"
+        "url": "https://github.com/TayhoSolutions/nestjs-altcha/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tayhosolutions/nestjs-altcha.git"
+        "url": "git+https://github.com/TayhoSolutions/nestjs-altcha.git"
     },
     "license": "MIT",
     "author": "Tayho Solutions",

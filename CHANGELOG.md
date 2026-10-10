@@ -2,7 +2,7 @@
 
 All notable changes to this project are documented in this file. The project follows [Semantic Versioning](https://semver.org).
 
-## 0.1.0 – unreleased
+## 0.1.0 – 11. Oct. 2026
 
 - Shared verifier (`createAltchaVerifier`) based on `altcha-lib` v2 with key signature, expiry and replay protection
 - Replay stores for memory (`createMemoryReplayStore`) and Redis (`createRedisReplayStore`); store errors are rejected as `store_unavailable` (503)
