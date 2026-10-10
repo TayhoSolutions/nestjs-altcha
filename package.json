@@ -1,0 +1,100 @@
+{
+    "name": "@tayho/nestjs-altcha",
+    "version": "0.1.0",
+    "description": "Self-hosted ALTCHA proof-of-work bot protection for NestJS, with an optional Better Auth plugin",
+    "keywords": [
+        "nestjs",
+        "altcha",
+        "captcha",
+        "bot-protection",
+        "proof-of-work",
+        "better-auth",
+        "guard",
+        "spam",
+        "privacy",
+        "gdpr"
+    ],
+    "homepage": "https://github.com/tayhosolutions/nestjs-altcha#readme",
+    "bugs": {
+        "url": "https://github.com/tayhosolutions/nestjs-altcha/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tayhosolutions/nestjs-altcha.git"
+    },
+    "license": "MIT",
+    "author": "Tayho Solutions",
+    "type": "commonjs",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        },
+        "./better-auth": {
+            "types": "./dist/better-auth/index.d.ts",
+            "default": "./dist/better-auth/index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "typesVersions": {
+        "*": {
+            "better-auth": [
+                "dist/better-auth/index.d.ts"
+            ]
+        }
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "CHANGELOG.md",
+        "LICENSE"
+    ],
+    "engines": {
+        "node": ">=22.12"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "rm -rf dist && tsc -p tsconfig.build.json",
+        "typecheck": "tsc -p tsconfig.json --noEmit",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "test:widget": "node e2e/widget.e2e.cjs",
+        "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"e2e/**/*.cjs\"",
+        "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\" \"e2e/**/*.cjs\"",
+        "prepublishOnly": "npm run typecheck && npm test && npm run build"
+    },
+    "dependencies": {
+        "altcha-lib": "^2.6.0"
+    },
+    "peerDependencies": {
+        "@nestjs/common": "^11.0.0 || ^12.0.0",
+        "better-auth": "^1.7.0"
+    },
+    "peerDependenciesMeta": {
+        "better-auth": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "@nestjs/common": "^12.1.2",
+        "@nestjs/core": "^12.1.2",
+        "@nestjs/platform-express": "^12.1.2",
+        "@nestjs/testing": "^12.1.2",
+        "@types/node": "^24.19.2",
+        "@types/supertest": "^7.2.1",
+        "altcha": "^3.3.0",
+        "better-auth": "^1.7.7",
+        "ioredis": "^6.0.0",
+        "playwright-core": "^1.64.0",
+        "prettier": "^3.9.10",
+        "reflect-metadata": "^0.2.2",
+        "rxjs": "^7.8.2",
+        "supertest": "^7.3.1",
+        "typescript": "^6.0.3",
+        "vitest": "^5.0.3"
+    }
+}
